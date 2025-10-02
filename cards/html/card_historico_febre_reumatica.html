@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            # background: linear-gradient(135deg, #5188e0, #42d59f);
+            /* background: linear-gradient(135deg, #5188e0, #42d59f); */
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -71,7 +71,8 @@
 
         .stats {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 10px;
             margin-bottom: 30px;
             padding-top: 20px;
             border-top: 2px solid #f0f0f0;
@@ -79,13 +80,24 @@
 
         .stat-item {
             text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 8px;
         }
 
         .stat-number {
             font-size: 32px;
             font-weight: bold;
             color: #5188e0;
-            display: block;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .stat-number-percent {
+            font-size: 24px;
+            font-weight: bold;
+            color: #5188e0;
+            display: inline-block;
             margin-bottom: 5px;
         }
 
@@ -124,7 +136,8 @@
 
         <div class="stats">
             <div class="stat-item">
-                <span class="stat-number">106 / 90%</span>
+                <span class="stat-number">106</span>
+                <span class="stat-number-percent">90%</span>
             </div>
         </div>
         <p>Tempo médio de uso da Benzetacil: 11.7 anos</p>
